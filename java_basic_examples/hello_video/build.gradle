@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
 
     defaultConfig {
         applicationId "com.projecttango.examples.java.hellovideo"
@@ -28,7 +28,7 @@ if (project.hasProperty("Tango.catkin_devel_prefix")) {
     external_lib_prefix = project.property("Tango.catkin_devel_prefix")
 } else {
     // Building in standalone sample form.
-    external_lib_prefix = "../../../TangoReleaseLibs"
+    external_lib_prefix = "../../TangoReleaseLibs"
 }
 
 repositories {
@@ -38,5 +38,9 @@ repositories {
 }
 
 dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
     compile fileTree(dir: external_lib_prefix + '/jar', include: ['**/*.jar'])
+
 }

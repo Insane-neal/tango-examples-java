@@ -106,7 +106,7 @@ public class DepthPerceptionActivity extends Activity {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Point count: " + xyzIjData.xyzCount);
         stringBuilder.append(". Average depth (m): " + calculateAveragedDepth(xyzIjData.xyz));
-        Log.i(TAG, stringBuilder.toString());
+        Log.d(TAG, stringBuilder.toString());
     }
 
     /**

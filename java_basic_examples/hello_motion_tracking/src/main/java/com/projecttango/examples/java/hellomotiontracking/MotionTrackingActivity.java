@@ -25,7 +25,6 @@ import com.google.atap.tangoservice.TangoEvent;
 import com.google.atap.tangoservice.TangoOutOfDateException;
 import com.google.atap.tangoservice.TangoPoseData;
 import com.google.atap.tangoservice.TangoXyzIjData;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,17 +35,22 @@ import java.util.ArrayList;
  * Main Activity class for the Motion Tracking API Sample. Handles the connection to the Tango
  * service and propagation of Tango pose data Layout view.
  */
-public class MotionTrackingActivity extends Activity {
+public class MotionTrackingActivity extends Activity implements LongPressListener{
 
     private static final String TAG = MotionTrackingActivity.class.getSimpleName();
 
     private Tango mTango;
     private TangoConfig mConfig;
+    private MapView mapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_motion_tracking);
+        //setContentView(R.layout.activity_motion_tracking);
+        setContentView(R.layout.motion_tracking);
+        mapView = (MapView) findViewById(R.id.vi_motion_tracking);
+        mapView.addLongPressListener(this);
+        //mapView.setTrack();
     }
 
     /**
@@ -82,6 +86,7 @@ public class MotionTrackingActivity extends Activity {
             @Override
             public void onPoseAvailable(final TangoPoseData pose) {
                 logPose(pose);
+
             }
 
             @Override
@@ -167,5 +172,10 @@ public class MotionTrackingActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+
+    @Override
+    public void onLongPressInit(double initX, double initY) {
+
     }
 }

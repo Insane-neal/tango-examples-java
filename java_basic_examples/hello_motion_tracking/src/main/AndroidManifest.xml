@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <uses-library android:name="com.projecttango.libtango_device2"
-            android:required="true" />
+            android:required="false" />
         <activity android:name="com.projecttango.examples.java.hellomotiontracking.MotionTrackingActivity"
             android:label="@string/app_name_long"
             android:screenOrientation="fullSensor">
