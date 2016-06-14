@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Zheng\Documents\GitHub\tango-examples-java\java_quick_start_example\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="11114a1c00b34c6131fa19371edcb42df88f06ed">
+        <dex dex="C:\Users\Zheng\Documents\GitHub\tango-examples-java\java_quick_start_example\app\build\intermediates\pre-dexed\debug\instant-run_5b61cb2a04c42aad7d62d910f6ef1b602c8493a8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Zheng\Documents\GitHub\tango-examples-java\TangoReleaseLibs\jar\tango_java_lib.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="e01409ee1e6e3af28f0928954255c9bccbfe0e9d">
+        <dex dex="C:\Users\Zheng\Documents\GitHub\tango-examples-java\java_quick_start_example\app\build\intermediates\pre-dexed\debug\tango_java_lib_101746b7d39e033d30381fbcb99685a1dcdfc53e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Zheng\Documents\GitHub\tango-examples-java\java_quick_start_example\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="239271b7c8931fa6c143c650b61a9276a80edcc6">
+        <dex dex="C:\Users\Zheng\Documents\GitHub\tango-examples-java\java_quick_start_example\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_550eade92839b2651d84658483a419030c1da4f5.jar" />
+    </item>
+
+</items>

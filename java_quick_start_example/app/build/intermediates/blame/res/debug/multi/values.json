@@ -1,0 +1,125 @@
+[
+    {
+        "outputFile": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 697,
+                        "endColumn": 57,
+                        "endOffset": 750
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 55,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 756,
+                        "endColumn": 55,
+                        "endOffset": 807
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 53,
+                    "endOffset": 218
+                },
+                "from": {
+                    "file": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 662,
+                        "endColumn": 53,
+                        "endOffset": 711
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 223,
+                    "endColumn": 66,
+                    "endOffset": 285
+                },
+                "from": {
+                    "file": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 717,
+                        "endColumn": 66,
+                        "endOffset": 779
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 290,
+                    "endLine": 12,
+                    "endColumn": 12,
+                    "endOffset": 576
+                },
+                "from": {
+                    "file": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 797,
+                        "endLine": 27,
+                        "endColumn": 12,
+                        "endOffset": 1089
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 581,
+                    "endLine": 15,
+                    "endColumn": 12,
+                    "endOffset": 736
+                },
+                "from": {
+                    "file": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1130,
+                        "endLine": 32,
+                        "endColumn": 12,
+                        "endOffset": 1287
+                    }
+                }
+            }
+        ]
+    }
+]

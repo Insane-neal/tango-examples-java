@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 187
+                },
+                "from": {
+                    "file": "C:\\Users\\Zheng\\Documents\\GitHub\\tango-examples-java\\java_quick_start_example\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 788,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 922
+                    }
+                }
+            }
+        ]
+    }
+]

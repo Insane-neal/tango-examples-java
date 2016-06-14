@@ -27,6 +27,8 @@ public class MapView extends View implements GestureDetector.OnGestureListener {
     final String TAG = this.getClass().getName();
 
     public Bitmap map;
+    public Boolean isInitialized = false;
+
     private GestureDetector gestureDetector;
     private MoveGestureDetector moveGestureDetector;
     private ScaleGestureDetector scaleGestureDetector;
@@ -184,6 +186,7 @@ public class MapView extends View implements GestureDetector.OnGestureListener {
         for (LongPressListener longPressListener : longPressListeners) {
             longPressListener.onLongPressInit(markPointInMeter[0], markPointInMeter[1]);
         }
+        isInitialized=true;
         invalidate();
     }
 
@@ -248,6 +251,16 @@ public class MapView extends View implements GestureDetector.OnGestureListener {
         if (markPointInPixel != null) {
             markPointInPixel[0] = (float) (markPointInPixel[0] + strength * Math.sin(angle / 180 * Math.PI));
             markPointInPixel[1] = (float) (markPointInPixel[1] - strength * Math.cos(angle / 180 * Math.PI));
+            markPointInMeter[0] = (markPointInPixel[0] - ORIGINAL_POINT[0]) / METER_2_PIXEL;
+            markPointInMeter[1] = (markPointInPixel[1] - ORIGINAL_POINT[1]) / METER_2_PIXEL;
+            invalidate();
+        }
+    }
+
+    public void moveMarkByCoordinates(float x, float y) {
+        if (markPointInPixel != null) {
+            markPointInPixel[0] = markPointInPixel[0] + x;
+            markPointInPixel[1] = markPointInPixel[1] + y;
             markPointInMeter[0] = (markPointInPixel[0] - ORIGINAL_POINT[0]) / METER_2_PIXEL;
             markPointInMeter[1] = (markPointInPixel[1] - ORIGINAL_POINT[1]) / METER_2_PIXEL;
             invalidate();

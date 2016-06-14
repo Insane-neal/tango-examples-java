@@ -83,10 +83,27 @@ public class MotionTrackingActivity extends Activity implements LongPressListene
 
         // Listen for new Tango data
         mTango.connectListener(framePairs, new OnTangoUpdateListener() {
+            float[] position2DimPrevious;
             @Override
             public void onPoseAvailable(final TangoPoseData pose) {
                 logPose(pose);
-
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (mapView.isInitialized) {
+                            float[] position = pose.getTranslationAsFloats();
+                            //X and Y coordinates are swapped
+                            float[] position2Dim = new float[]
+                                    {position[0] * mapView.METER_2_PIXEL, position[1] * mapView.METER_2_PIXEL};
+                            if(position2DimPrevious==null)
+                                position2DimPrevious=position2Dim;
+                            mapView.moveMarkByCoordinates(position2Dim[0]-position2DimPrevious[0],
+                                    position2Dim[1]-position2DimPrevious[1]);
+                            Log.d("Coordinates", Float.toString(position2Dim[0]) + "," + Float.toString(position2Dim[1]));
+                            position2DimPrevious=position2Dim.clone();
+                        }
+                    }
+                });
             }
 
             @Override
